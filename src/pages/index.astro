@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
+import WandIcon from '../components/icons/Wand.astro';
+import Pill from '../components/Pill.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Stack from '../components/Stack.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="Portafolio de Genaro Montoya - Desarrollador y Programador web con 3 años de experiencia" description="Contrata a Genaro para crear tu página web. Desarrollador web expecializado en crear aplicaciones únicas.">
+	<main class="text-white px-4">
+		<SectionContainer class="pt-24 md:pt-40 pb-24" id="top">
+			<img class="rounded-full size-64 mb-4" src="/avatar.png" alt="Genaro photo">
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-col md:flex-row md:items-center gap-x-4 pb-6 lg:pb-10">Hola, soy Genaro 
+				<a href="https://linkedin.com/in/cristianorregod" target="_blank" rel="noopener" class="flex justify-center items-center min-w-fit self-start md:self-auto mt-2 md:mt-0">
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px] text-white">
+				<span>+9 años de experiencia.</span> <span class="text-scooter-500/90">Ingeniero de Sistemas y Desarrollador web.</span> <span class="text-mango-200">De Maracay, Venezuela.</span> <span class="opacity-75">Especializado en crear aplicaciones web dinámicas.</span></h2>
+				<ul class="flex gap-4 mt-8 flex-wrap">
+					<li class="text-white">
+						<Pill href="https://www.linkedin.com/in/Genaro-montoya-abadia/">
+							<LinkedInIcon class="size-4 md:size-6"/>
+							LinkedIn
+						</Pill>
+						
+					</li>
+					<li class="text-white">
+						<Pill href="https://github.com/genarogg">
+							<GitHubIcon class="size-4 md:size-6"/>
+							GitHub
+						</Pill>
+					</li>
+					<li class="text-white">
+						<Pill href="mailto:mmontoyaabadia@gmail.com">
+							<MailIcon class="size-4 md:size-6"/>
+							genarrogg@gmail.com
+						</Pill>
+					</li>
+				</ul>
+		</SectionContainer>
+		<SectionContainer id="experience">
+			<SectionTitle>
+				<Briefcase class="size-6"/>
+				Experiencia laboral
+			</SectionTitle>
+			<Experience/>
+		</SectionContainer>
+		<SectionContainer id="projects">
+			<SectionTitle>
+				<CodeIcon class="size-6"/>
+				Proyectos
+			</SectionTitle>
+			<Projects/>
+		</SectionContainer>
+		<SectionContainer class="pb-24" id="stack">
+			<SectionTitle>
+				<WandIcon class="size-6"/>
+				Tecnologías
+			</SectionTitle>
+			<Stack/>
+		</SectionContainer>
+		<SectionContainer class="pt-16 pb-16 " id="contact">
+			<Contact/>
+		</SectionContainer>
+		</main>
+		
+</Layout>
+

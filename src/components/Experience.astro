@@ -1,0 +1,20 @@
+---
+import {EXPERIENCE} from '../constants';
+import ExperienceItem from '../components/ExperienceItem.astro';
+
+---
+
+
+<ol class="relative border-s border-gray-200 ml-3">                  
+   
+    {EXPERIENCE.map(experience => (
+        <li class="mb-10 ms-4">
+         <ExperienceItem {...experience}/>
+         </li>
+     ))} 
+</ol>
+
+
+
+
+

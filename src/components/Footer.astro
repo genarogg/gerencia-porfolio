@@ -1,0 +1,30 @@
+---
+import GitHubIcon from "./icons/GitHub.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import MailIcon from "./icons/Mail.astro";
+import InstagramIcon from "./icons/Instagram.astro";
+
+---
+
+
+<footer class="rounded-lg shadow bg-neutral-900/70 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mt-24 mb-10">
+    <div class="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center gap-y-2 md:flex-row md:items-center md:justify-between">
+    <p ><span class="text-scooter-500">Genaro Gonzalez</span> - <span class="text-mango-300">Portafolio</span></p>
+    
+    <nav class="flex flex-wrap gap-x-8 items-center">
+        <a  href="https://github.com/genarogg" target="_blank" rel="noopener noreferrer" title="Perfil de GitHub">
+            <GitHubIcon class="size-6 hover:scale-105 transition-transform"/>
+        </a>
+        <a href="https://www.linkedin.com/in/Genaro-montoya-abadia/" target="_blank" rel="noopener noreferrer" title="Perfil de LinkedIn">
+            <LinkedInIcon class="size-6 hover:scale-105 transition-transform"/>
+        </a>
+        <a href="mailto:mmontoyaabadia@gmail.com" target="_blank" rel="noopener noreferrer" title="Correo electrónico">
+            <MailIcon class="size-8 hover:scale-105 transition-transform"/>
+        </a>
+        <a href="https://www.instagram.com/mamoabadia/" target="_blank" rel="noopener noreferrer" title="WhatsApp personal">
+            <InstagramIcon class="size-8 hover:scale-105 transition-transform"/>
+        </a>
+    </nav>
+    </div>
+</footer>
+

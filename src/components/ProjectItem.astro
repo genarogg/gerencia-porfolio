@@ -1,0 +1,25 @@
+---
+import ExternalLinkIcon from "./icons/ExternalLink.astro";
+interface Props {
+    title: string
+    description: string
+    link: string
+    class: string
+    image: string
+    imageClass: string
+}
+
+const {title, description, link, class: className, image, imageClass} = Astro.props
+---
+
+<article class={`w-full min-h-60 rounded-3xl p-2 
+    ${className}  
+    bg-neutral-900 hover:scale-105 transition-transform shadow-lg shadow-white/5`}>
+        <a href={link} class="relative group grid gap-y-2" target="_blank" rel="noopener noreferrer">
+        <img class={`rounded-3xl w-full object-cover group-hover:opacity-80 transition-opacity ${imageClass}`} src={image} alt={`Captura de pantalla del proyecto ${title}`}>
+        
+        <h3 class="text-center text-mango-300 font-semibold">{title}</h3>
+        <p class="text-sm px-2 text-pretty text-center mb-3 ">{description}</p>
+        <span class="absolute top-4 right-4 hidden group-hover:block transition-all text-mango-200"><ExternalLinkIcon class="size-4"/></span>
+    </a>
+</article>
